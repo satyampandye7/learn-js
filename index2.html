@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="index2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practise2</title>
+</head>
+<body>
+  <button class="add_to_bag" onclick="cartQuantaty++; document.querySelector('#cart-summary').innerText=`You bag has ${cartQuantaty} items`;">Add To Bag</button>
+  <button class="move_to_wishlist" onclick="cartQuantaty--; document.querySelector('#cart-summary').innerText=`You bag has ${cartQuantaty} items`;">Move To Wishlist</button>
+  <button class="sale" onclick="cartQuantaty+=2; document.querySelector('#cart-summary').innerText=`You bag has ${cartQuantaty} items`;">Add 1+1 Sale Item</button>
+  <h1 id="cart-summary"></h1>
+  <script>
+    let cartQuantaty=0;
+    document.querySelector('#cart-summary').innerText=`You bag has ${cartQuantaty} items`;
+    
+  </script>
+</body>
+</html>
